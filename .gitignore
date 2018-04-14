@@ -1,0 +1,9 @@
+.DS_Store
+*.[oaf]
+.tmpfile
+*~
+*.mod
+*.exe
+a.out
+sal
+wrfchemi*
