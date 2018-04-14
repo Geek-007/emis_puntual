@@ -26,11 +26,11 @@ Editar el Makefile para indicar compilador y librerias
 variable de ambiente requerida NETCDF=/directorio_donde_esta_NETCDF
 
 formato del new_emiss.csv
-2	Latitud	Longitud	Capa	Hr_ini	Hr_fin	SO2	CO	NOX	VOC's	PM2.5	PM10	CH4	Celemetal	Corganico	CO2	Metanol	Formaldehido	Benzopireno	Benceno	Toueno	Xyleno	Estireno	Fenol	Hexano
+48	19	Latitud Longitud	Hr_ini	Hr_fin	E_SO2	E_CO	E_NO	E_HC3	E_PM25	E_PM_10	E_CH4	E_CSL	E_ETH	E_CO2	E_ORA1	E_HCHO	E_ALD	E_ORA2	E_TOL	E_XYL	E_OL2	E_HC5	E_HC8
 19.21888889	-98.11305556	2	0	1	581	100800	4550	4760	8400	9800	4760	511	4060	1064700	1260	1050	0.105	140	112	40.6	91	105	980
 19.14277778	-98.15361111	2	0	1	581	100800	4550	4760	8400	9800	4760	511	4060	1064700	1260	1050	0.105	140	112	40.6	91	105	980
 
-El primer numero en el encabezado indica el numero de reglones a leer.
+El primer numero en el encabezado indica el numero de reglones a leer, el segundo el numero de variables del mecanismo a leer. Los nombres de las variables son los del archivo de emisiones y estan en kg/hora
 a partir del segundo renglon se inicia con
 localizacion  (lat, lon)
 capa de liberacion (el valor maximo depende del emissions_zdim_stag del wrfchemin)

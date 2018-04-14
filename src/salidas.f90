@@ -260,7 +260,7 @@ subroutine crea_attr2(ncid,idm,dimids,svar,cname,id_var)
         if(pname(j).eq.ename(iksp) )then
         if(f_emis(j,i).ne.0)print*,pname(j),iksp,ename(iksp),f_emis(j,i)
         ea(icf(i),jcf(i),levl,1)=ea(icf(i),jcf(i),levl,1)&
-        + f_emis(j,i)!*m2km/(dx*dy)*0.9
+        + f_emis(j,i)!*m2km/(dx*dy)
         end if
         end do
       end if ! icf and jcf .ne. 0
